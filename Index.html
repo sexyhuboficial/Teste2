@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SexyHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Menu Navegação -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SexyHub</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#modelo-destaque">Modelos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+      </ul>
+      <div class="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Primeira seção -->
+  <section id="inicio" class="inicio section-animate">
+    <div class="inicio-conteudo">
+      <div class="texto">
+        <h1>Bem-vindo à SexyHub</h1>
+        <p>
+          Nossa agência conecta você diretamente a um atendimento personalizado,
+          garantindo discrição total e segurança em cada etapa.
+        </p>
+        <p>
+          Os conteúdos são exclusivos, selecionados com qualidade e enviados de forma rápida, privada e sem intermediários. Aqui, o foco é você!
+        </p>
+        <button onclick="document.getElementById('como-funciona').scrollIntoView({ behavior: 'smooth' });">
+          Como funciona o nosso trabalho!
+        </button>
+      </div>
+      <div class="imagem">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" alt="Modelo SexyHub" />
+        <div class="sombra"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Segunda seção - Como funciona -->
+  <section id="como-funciona" class="como-funciona section-animate">
+    <h2>Como Funciona a SexyHub</h2>
+    <p>
+      Você, cliente exclusivo, tem acesso a um catálogo seleto com as modelos mais desejadas da plataforma. 
+      Cada perfil é exclusivo e cuidadosamente verificado para garantir autenticidade e qualidade.
+    </p>
+    <p>
+      Após escolher a modelo que mais combina com seu gosto, você será direcionado ao nosso time de atendimento formado exclusivamente por mulheres. 
+      Elas garantem uma experiência segura, discreta e personalizada para finalizar sua compra.
+    </p>
+    <button onclick="document.getElementById('faq').scrollIntoView({ behavior: 'smooth' });">
+      Dúvidas Frequentes
+    </button>
+  </section>
+
+  <!-- Modelos em destaque -->
+  <section id="modelo-destaque" class="modelo-destaque section-animate">
+    <h2>Modelos de Destaque da SexyHub</h2>
+    <div class="modelo-carrossel">
+      <div class="modelo-card">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=500&q=80" alt="Marina Joyce" />
+        <h3>Marina Joyce</h3>
+        <p>Conhecida por seu carisma e conteúdo exclusivo, Marina encanta nossos clientes com sua autenticidade.</p>
+      </div>
+      <div class="modelo-card">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=500&q=80" alt="Laura Mendes" />
+        <h3>Laura Mendes</h3>
+        <p>Com um estilo único, Laura traz conteúdos sensuais e uma conexão verdadeira com os fãs.</p>
+      </div>
+      <div class="modelo-card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Isabela Rosa" />
+        <h3>Isabela Rosa</h3>
+        <p>Isabela destaca-se pelo profissionalismo e qualidade dos seus packs exclusivos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção FAQ -->
+  <section id="faq" class="faq section-animate">
+    <h2>Perguntas Frequentes</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Como faço para comprar um pack?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Basta entrar em contato com nossa atendente via WhatsApp pelo botão que está na página inicial.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>É seguro comprar pela SexyHub?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Sim! Todas as negociações são feitas diretamente com nossas atendentes mulheres, garantindo privacidade, atendimento humanizado e total descrição.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Vai aparecer algo no meu extrato ou celular?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Não. Usamos nomes genéricos e opções de pagamento sigilosas. Você não precisa baixar app ou criar conta na plataforma.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>As modelos são reais mesmo?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Sim. Todas passam por verificação antes de entrarem no catálogo. O conteúdo que você recebe é original e exclusivo.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>E se eu pagar e ninguém responder?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Nosso time de atendimento feminino está disponível todos os dias. O contato é direto e rápido.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>O conteúdo é igual ao que tem em sites gratuitos?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">Não. O conteúdo da SexyHub é exclusivo e feito sob demanda por cada modelo da plataforma.</div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 SexyHub - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
