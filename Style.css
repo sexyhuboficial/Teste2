@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 16px;
+}
+
+/* Menu navegação */
+header {
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e91e63;
+  cursor: default;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #e91e63;
+}
+
+/* Hamburger menu - escondido no desktop */
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburguer span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Seções */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #e91e63; /* Rosa destaque */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+button {
+  background-color: #e91e63; /* Rosa */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+/* Primeira seção */
+.inicio-conteudo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: auto;
+  gap: 1.5rem;
+}
+
+.inicio .texto {
+  flex: 1;
+}
+
+.inicio .imagem {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.inicio .imagem img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.inicio .sombra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, transparent);
+  border-radius: 12px;
+}
+
+.modelo-carrossel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.modelo-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  flex: 0 0 auto;
+}
+
+.modelo-card:hover {
+  transform: translateY(-5px);
+}
+
+.modelo-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Mobile - scroll horizontal */
+@media (max-width: 768px) {
+  .modelo-carrossel {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding-bottom: 10px;
+  }
+  .modelo-card {
+    scroll-snap-align: start;
+    width: 80%;
+    min-width: 250px;
+    margin-right: 1rem;
+  }
+
+  /* Menu mobile */
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background: #111;
+    height: calc(100vh - 60px);
+    width: 220px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.8);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hamburguer {
+    display: flex;
+  }
+}
+
+/* FAQ */
+.faq-item {
+  background-color: #111;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: #222;
+  color: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.faq-answer {
+  padding: 0 20px 15px;
+  display: none;
+  color: #ccc;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+/* Animação fade-in */
+.section-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Rodapé */
+footer {
+  background: #111;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  }
