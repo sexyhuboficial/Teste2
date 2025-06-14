@@ -6,7 +6,6 @@ hamburguer.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-
 // FAQ toggle
 document.querySelectorAll('.faq-question').forEach(button => {
   button.addEventListener('click', () => {
